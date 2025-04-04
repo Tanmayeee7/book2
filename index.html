@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Book Overview Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agentic AI Book Overview Generator</h1>
+        <p class="description">Type a book name and get an overview right away!</p>
+        
+        <div class="input-group">
+            <label for="bookName">Enter the name of the book:</label>
+            <input type="text" id="bookName" placeholder="Type here">
+            <div id="errorMessage" class="error-message">Book name cannot be empty!</div>
+        </div>
+        
+        <button id="generateBtn">Generate Overview</button>
+        
+        <div id="spinner" class="spinner"></div>
+        
+        <div id="resultContainer" class="result-container">
+            <h2 id="resultTitle" class="result-title"></h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
